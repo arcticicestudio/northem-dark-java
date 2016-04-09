@@ -141,4 +141,9 @@ public enum NorthemDark {
    * <div style="border:none;width:25px;height:30px;background-color:rgb(194,161,202);margin: 0"></div>
    */
   PURPLE(194,161,202);
+
+  /**
+   * Contains the RGB color code.
+   */
+  private final Color COLOR;
 }
