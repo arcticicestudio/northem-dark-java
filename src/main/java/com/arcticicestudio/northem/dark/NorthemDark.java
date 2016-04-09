@@ -3,7 +3,7 @@
 title     Northem Dark Color Palette        +
 project   northem-dark-java                 +
 file      NorthemDark.java                  +
-version                                     +
+version   0.1.0                             +
 author    Arctic Ice Studio                 +
 email     development@arcticicestudio.com   +
 website   http://arcticicestudio.com        +
