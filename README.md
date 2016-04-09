@@ -23,12 +23,12 @@ This is a darker and more blue-tinged variation.
 Visit the [official website](http://arcticicestudio.com/northem) (actually under construction) for more informations.
 
 ### Version
-[`-`](https://github.com/arcticicestudio/northem-dark-java/releases/latest)
+[`0.0.0`](https://github.com/arcticicestudio/northem-dark-java/releases/latest)
 
 For older versions check out the [GitHub Repository](https://github.com/arcticicestudio/northem-dark-java/releases) or visit the [official website](http://arcticicestudio.com/northem) (actually under construction).
 
 ### Changelog
-[`-`](CHANGELOG.md)
+[`0.0.0`](CHANGELOG.md)
 
 ### Development
 #### Workflow
