@@ -151,4 +151,15 @@ public enum NorthemDark {
    * Contains the RGB color code.
    */
   private final Color COLOR;
+
+  /**
+   * Constructs a new color object.
+   *
+   * @param RED The value for the additive primary color {@code red}
+   * @param GREEN The value for the additive primary color {@code green}
+   * @param BLUE The value for the additive primary color {@code blue}
+   */
+  NorthemDark(final int RED, final int GREEN, final int BLUE) {
+    COLOR = Color.rgb(RED, GREEN, BLUE);
+  }
 }
