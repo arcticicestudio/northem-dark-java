@@ -9,7 +9,7 @@ email     development@arcticicestudio.com   +
 website   http://arcticicestudio.com        +
 copyright Copyright (C) 2016                +
 created   2016-01-23 15:42 UTC+0100         +
-modified  2016-04-09 13:49 UTC+0200         +
+modified  2016-04-09 14:05 UTC+0200         +
 +++++++++++++++++++++++++++++++++++++++++++++
 
 [Description]
@@ -190,5 +190,14 @@ public enum NorthemDark {
    */
   public static String hex(final Color COLOR) {
     return COLOR_PREFIX.matcher(COLOR.toString()).replaceAll("#").substring(0, 7).toUpperCase();
+  }
+
+  /**
+   * Returns the color object.
+   *
+   * @return the color object
+   */
+  public Color get() {
+    return COLOR;
   }
 }
