@@ -1,9 +1,19 @@
-Northem Dark - Java
-===================
+<img align="center" src="https://raw.githubusercontent.com/arcticicestudio/northem-dark-java/develop/src/main/assets/media/northem-dark-java-banner.png" alt="Northem Dark Java"/> <a href="https://github.com/arcticicestudio/northem-dark"><img align="right" src="https://raw.githubusercontent.com/arcticicestudio/northem-dark-java/develop/src/main/assets/media/northem-logo.png"/></a>
+
+## 0.2.0 (2016-08-03) - Apache Maven Migration
+This version is mainly focused on a [Apache Maven](https://maven.apache.org) migration.
+Release and snapshot versions are now deployed to the [Central Repository](https://search.maven.org) via [OSS Sonatype](https://oss.sonatype.org).
+
+### Improvements
+#### Build Tool
+  - Migrated to [Apache Maven](https://maven.apache.org) based on the [`glacier-apache-maven@0.3.0`](https://github.com/arcticicestudio/glacier-apache-maven) project skeletons
+
+#### Documentation
+  - The `README` has been modernized and now includes a "Getting started" section
 
 ## 0.1.0 (2016-04-09)
 ### Features
-  - Implemented the [Northem](https://github.com/arcticicestudio/northem) color palette enumeration class [`Northem`](https://github.com/arcticicestudio/northem-java/blob/master/src/main/java/com/arcticicestudio/northem/Northem.java)  
+  - Implemented the [Northem Dark](https://github.com/arcticicestudio/northem-dark) color palette enumeration class [`NorthemDark`](https://github.com/arcticicestudio/northem-dark-java/blob/master/src/main/java/com/arcticicestudio/northem/NorthemDark.java)  
 
 **Constants**
 

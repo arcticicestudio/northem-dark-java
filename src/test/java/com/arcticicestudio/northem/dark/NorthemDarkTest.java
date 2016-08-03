@@ -3,7 +3,7 @@
 title     Northem Dark Enumeration JUnit Test +
 project   northem-dark-java                   +
 file      NorthemDarkTest.java                +
-version   0.1.0                               +
+version   0.2.0                               +
 author    Arctic Ice Studio                   +
 email     development@arcticicestudio.com     +
 website   http://arcticicestudio.com          +
