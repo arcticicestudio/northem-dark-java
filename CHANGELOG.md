@@ -1,9 +1,8 @@
-Northem Dark - Java
-===================
+<img align="center" src="https://raw.githubusercontent.com/arcticicestudio/northem-dark-java/develop/src/main/assets/media/northem-dark-java-banner.png" alt="Northem Dark Java"/> <a href="https://github.com/arcticicestudio/northem-dark"><img align="right" src="https://raw.githubusercontent.com/arcticicestudio/northem-dark-java/develop/src/main/assets/media/northem-logo.png"/></a>
 
 ## 0.1.0 (2016-04-09)
 ### Features
-  - Implemented the [Northem](https://github.com/arcticicestudio/northem) color palette enumeration class [`Northem`](https://github.com/arcticicestudio/northem-java/blob/master/src/main/java/com/arcticicestudio/northem/Northem.java)  
+  - Implemented the [Northem Dark](https://github.com/arcticicestudio/northem-dark) color palette enumeration class [`NorthemDark`](https://github.com/arcticicestudio/northem-dark-java/blob/master/src/main/java/com/arcticicestudio/northem/NorthemDark.java)  
 
 **Constants**
 
