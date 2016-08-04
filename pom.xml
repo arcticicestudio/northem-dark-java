@@ -33,8 +33,8 @@ Project POM based on the skeleton file of the "glacier-apache-maven@0.3.0" proje
   (7) Build
     (7.0) Plugins
       (7.0.0) validate
-      (7.0.1) compile
-      (7.0.2) process-resources
+      (7.0.1) process-resources
+      (7.0.2) compile
       (7.0.3) package
       (7.0.4) verify
       (7.0.5) install
@@ -403,7 +403,28 @@ Glacier Apache Maven Project
       <!--+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - [7.0.0]-+-->
 
       <!--+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +
-          + Build - Plugins - compile                                          [7.0.1] +
+          + Build - Plugins - process-resources                                [7.0.1] +
+          +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +-->
+      <!--
+      Copies the resources for the main source code.
+
+      @see https://maven.apache.org/plugins/maven-resources-plugin/resources-mojo.html
+      @since 0.1.0
+      -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>3.0.1</version>
+        <inherited>true</inherited>
+        <configuration>
+          <includeEmptyDirs>true</includeEmptyDirs>
+          <encoding>${project.build.sourceEncoding}</encoding>
+        </configuration>
+      </plugin>
+      <!--+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - [7.0.1]-+-->
+
+      <!--+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +
+          + Build - Plugins - compile                                          [7.0.2] +
           +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +-->
       <!--
       Compiles the main Java source code.
@@ -421,27 +442,6 @@ Glacier Apache Maven Project
           <source>${javaCompileVersion}</source>
           <target>${javaCompileVersion}</target>
           <failOnError>true</failOnError>
-        </configuration>
-      </plugin>
-      <!--+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - [7.0.1]-+-->
-
-      <!--+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +
-          + Build - Plugins - process-resources                                [7.0.2] +
-          +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +-->
-      <!--
-      Copies the resources for the main source code.
-
-      @see https://maven.apache.org/plugins/maven-resources-plugin/resources-mojo.html
-      @since 0.1.0
-      -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-resources-plugin</artifactId>
-        <version>3.0.1</version>
-        <inherited>true</inherited>
-        <configuration>
-          <includeEmptyDirs>true</includeEmptyDirs>
-          <encoding>${project.build.sourceEncoding}</encoding>
         </configuration>
       </plugin>
       <!--+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - [7.0.2]-+-->
