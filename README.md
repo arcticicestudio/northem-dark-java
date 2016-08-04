@@ -1,7 +1,7 @@
 <img align="center" src="https://raw.githubusercontent.com/arcticicestudio/northem-dark-java/develop/src/main/assets/media/northem-dark-java-banner.png" alt="Northem Dark Java"/> <a href="https://github.com/arcticicestudio/northem-dark"><img align="right" src="https://raw.githubusercontent.com/arcticicestudio/northem-dark-java/develop/src/main/assets/media/northem-logo.png"/></a>
 
 <img src="https://cdn.travis-ci.org/images/favicon-c566132d45ab1a9bcae64d8d90e4378a.svg" width=24 height=24/> [![Travis CI](https://img.shields.io/travis/arcticicestudio/northem-dark-java/develop.svg)](https://travis-ci.org/arcticicestudio/northem-dark-java) <img src="https://codecov.io/favicon.ico" width=24 height=24/> [![codecov](https://codecov.io/gh/arcticicestudio/northem-dark-java/branch/develop/graph/badge.svg)](https://codecov.io/gh/arcticicestudio/northem-dark-java)  
-<img src="https://assets-cdn.github.com/favicon.ico" width=24 height=24/> [![release](https://img.shields.io/github/release/arcticicestudio/northem-dark-java.svg)](https://github.com/arcticicestudio/northem-dark-java/releases/latest) <img src="http://search.maven.org/favicon.ico" width=24 height=24/> [![Central Repository](https://img.shields.io/maven-central/v/com.arcticicestudio/northem-dark-java.svg)](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.arcticicestudio%22%20AND%20a%3A%22northem-dark-java%22)
+<img src="https://assets-cdn.github.com/favicon.ico" width=24 height=24/> [![release](https://img.shields.io/github/release/arcticicestudio/northem-dark-java.svg)](https://github.com/arcticicestudio/northem-dark-java/releases/latest) <img src="http://search.maven.org/favicon.ico" width=24 height=24/> [![Central Repository](https://img.shields.io/maven-central/v/com.arcticicestudio/northem-dark-java.svg)](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.arcticicestudio%22%20AND%20a%3A%22northem-dark-java%22) [![OSS Sonatype Snapshot](https://img.shields.io/badge/snapshot-0.3.0--SNAPSHOT-blue.svg)](https://oss.sonatype.org/content/repositories/snapshots/com/arcticicestudio/northem-dark-java)
 
 Java library implementation of the north-bluish dark color palette [Northem Dark](https://github.com/arcticicestudio/northem-dark).  
 Optimized for syntax highlighting- and UI projects.  
@@ -31,7 +31,7 @@ compile(group: 'com.arcticicestudio', name: 'northem-dark-java', version: '0.2.0
 <dependency org="com.arcticicestudio" name="northem-dark-java" rev="0.2.0" />
 ```
 
-Development snapshots are available via [Sonatype's snapshot repository](https://oss.sonatype.org/content/repositories/snapshots).  
+Development snapshots are available via [OSS Sonatype](https://oss.sonatype.org/content/repositories/snapshots/com/arcticicestudio/northem-dark-java).   
 
 ### Build
 Build and install northem-dark-java into your local repository without GPG signing:  
