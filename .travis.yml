@@ -1,2 +1,49 @@
+# +++++++++++++++++++++++++++++++++++++++++++
+# title     Travis CI Build Configuration   +
+# project   northem-dark-java               +
+# file      .travis.yml                     +
+# version   0.2.0                           +
+# author    Arctic Ice Studio               +
+# email     development@arcticicestudio.com +
+# copyright Copyright (C) 2016              +
+# created   2016-08-03 14:23 UTC+0200       +
+# modified  2016-08-04 09:04 UTC+0200       +
+# +++++++++++++++++++++++++++++++++++++++++++
+#
+# [Description]
+# Configures the Travis CI build.
+#
+# [Index]
+#   (1) Environment
+#     (1.0) Language
+#     (1.1) JDK
+#
+# [Copyright]
+# Copyright (C) 2016 Arctic Ice Studio <development@arcticicestudio.com>
+#
+# [References]
+# Travis CI Documentation
+#   (https://docs.travis-ci.com)
+
+# +----------------------------------------------------------------------------+
+# + Environment                                                            [1] +
+# +----------------------------------------------------------------------------+
+# +----------------------------------------------------------------------------+
+# + Environment - Language                                               [1.0] +
+# +----------------------------------------------------------------------------+
+# Sets the language environment.
+#
+# @since 0.3.0
 language: java
-jdk: oraclejdk8
+# +----------------------------------------------------------------------[1.0]-+
+
+# +----------------------------------------------------------------------------+
+# + Environment - JDK                                                    [1.1] +
+# +----------------------------------------------------------------------------+
+# The JDK versions to test again.
+#
+# @since 0.3.0
+jdk:
+  - oraclejdk8
+# +----------------------------------------------------------------------[1.1]-+
+# +------------------------------------------------------------------------[1]-+
