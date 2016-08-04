@@ -9,7 +9,7 @@ author    Arctic Ice Studio               +
 email     development@arcticicestudio.com +
 copyright Copyright (C) 2016              +
 created   2016-08-03 11:20 UTC+0200       +
-modified  2016-08-03 11:21 UTC+0200       +
+modified  2016-08-04 09:15 UTC+0200       +
 +++++++++++++++++++++++++++++++++++++++++++
 
 [Description]
@@ -49,6 +49,7 @@ Project POM based on the skeleton file of the "glacier-apache-maven@0.3.0" proje
     (10.2) sign-jarsigner
     (10.3) secure-properties
     (10.4) enforce-jdk-version
+    (10.5) code-coverage
 
 [Copyright]
 Copyright (C) 2016 Arctic Ice Studio <development@arcticicestudio.com>
@@ -1006,6 +1007,54 @@ Glacier Apache Maven Project
       </build>
     </profile>
     <!--+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[10.4]-+-->
+
+    <!--+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +
+        + Profiles - code-coverage                                            [10.5] +
+        +- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - +-->
+    <!--
+    Prepares the agent and creates a code coverage report for tests of a single project
+    in multiple formats used by the codecov.io "codecov-bash" tool triggered by
+    Travis CI.
+
+    @since 0.1.0
+    -->
+    <profile>
+      <id>code-coverage</id>
+      <build>
+        <plugins>
+          <!--
+          Prepares the agent and creates a code coverage report for tests of a single project
+          in multiple formats used by the codecov.io "codecov-bash" tool triggered by
+          Travis CI.
+
+          @see http://www.eclemma.org/jacoco/trunk/doc/report-mojo.html
+          @see http://www.eclemma.org/jacoco/trunk/doc/prepare-agent-mojo.html
+          @see https://github.com/codecov/codecov-bash
+          @since 0.1.0
+          -->
+          <plugin>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.7.7.201606060606</version>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>prepare-agent</goal>
+                </goals>
+              </execution>
+              <execution>
+                <id>coverage-report</id>
+                <phase>test</phase>
+                <goals>
+                  <goal>report</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <!--+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[10.5]-+-->
   </profiles>
   <!--+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -[10]-+-->
 </project>
